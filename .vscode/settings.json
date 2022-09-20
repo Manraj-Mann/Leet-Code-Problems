@@ -5,6 +5,12 @@
         "chrono": "cpp",
         "iostream": "cpp",
         "ostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "vector": "cpp",
+        "utility": "cpp",
+        "random": "cpp",
+        "ios": "cpp",
+        "xtree": "cpp",
+        "map": "cpp"
     }
 }
