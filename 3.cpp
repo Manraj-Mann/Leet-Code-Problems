@@ -67,3 +67,61 @@ int main()
 
     return 0;
 }
+
+
+/*
+
+Two pointer approach
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        
+        
+        int i = 0 , j = 0 , maxlen = 0 , n = s.size();
+        map < char , bool > mp;
+        int curlen = 0 , prev = 0;
+        
+        
+        while(i < n && j < n ){
+            
+            
+            while(j < n && mp[s[j]] == false){
+                
+                mp[s[j]] = true;
+                curlen++;
+                j++;
+                maxlen = max(maxlen , curlen);
+                
+            }
+           
+            int voilation = j;
+            while(s[i] != s[voilation]){
+                    
+                     mp[s[i]] = false;
+                     i++;
+                     curlen--;
+                    
+            }
+            mp[s[i]] = false;
+            i++;
+            curlen--;
+            
+            // cout<<"maxlen = "<<maxlen<<endl;
+            cout<<"i = "<<i<<" j = "<<j<<endl;
+            
+            if ( j >= n){
+                
+                break;
+            }
+            
+            
+        }
+        
+        return maxlen;
+        
+    }
+};
+
+
+*/
