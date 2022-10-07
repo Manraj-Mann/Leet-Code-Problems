@@ -1,0 +1,15 @@
+Completed #day3 / #100daysofcode
+Started with the questions on array and refreshed the concepts like two pointer approach and prefix , postfix sum.
+
+Question 1 : https://leetcode.com/problems/3sum/
+Question 2 : 
+Question 3 : 
+
+Solution 1 : 
+( MOdified two Pointer Approach with removing duplicates )
+
+Solution 2 : 
+
+Solution 3 : 
+
+#100daysofcodechallenge #100daysofcode #leetcode #learning
