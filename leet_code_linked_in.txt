@@ -2,10 +2,13 @@ Completed #day3 / #100daysofcode
 Started with the questions on array and refreshed the concepts like two pointer approach and prefix , postfix sum.
 
 Question 1 : https://leetcode.com/problems/3sum/
+
+( The concept clarity form book Competitive Programmer’s Handbook )
+
 Question 2 : 
 Question 3 : 
 
-Solution 1 : 
+Solution 1 : https://github.com/Manraj-Mann/Leet-Code-Problems/blob/main/15.cpp
 ( MOdified two Pointer Approach with removing duplicates )
 
 Solution 2 : 
