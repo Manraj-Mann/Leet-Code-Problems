@@ -1,18 +1,18 @@
-Completed #day3 / #100daysofcode
+Completed #day4 / #100daysofcode
 Started with the questions on array and refreshed the concepts like two pointer approach and prefix , postfix sum.
 
-Question 1 : https://leetcode.com/problems/3sum/
+Question 1 : https://leetcode.com/problems/isomorphic-strings/
 
-( The concept clarity form book Competitive Programmer’s Handbook )
+( Hashtable + strings )
 
-Question 2 : 
-Question 3 : 
+Question 2 : https://leetcode.com/problems/is-subsequence/submissions/
 
-Solution 1 : https://github.com/Manraj-Mann/Leet-Code-Problems/blob/main/15.cpp
-( MOdified two Pointer Approach with removing duplicates )
+( String + two pointer)
+
+
+Solution 1 : 
 
 Solution 2 : 
 
-Solution 3 : 
 
 #100daysofcodechallenge #100daysofcode #leetcode #learning
