@@ -8,9 +8,11 @@ class Solution
 
 private:
 public:
+
+
     string s;
     int subs()
-    {
+    {   
 
         int ans = 0;
 
