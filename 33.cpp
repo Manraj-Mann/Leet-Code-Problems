@@ -11,35 +11,65 @@ public:
     int search(vector<int> &nums, int target)
     {
 
-        int l = 0, r = nums.size() - 1;
+        int l = 0;
         int ans = -1;
+        int r = nums.size() - 1;
+
         while (l <= r)
         {
 
-            cout << "l = " << l << " r = " << r << endl;
-            int mid = (l+r)/2;
-            cout << "mid = " << nums[mid] << endl;
+            int mid = l + (r - l) / 2;
+            // cout<<"l = "<<nums[l]<<" mid = "<<nums[mid]<<"r = "<<nums[r]<<endl;
 
-            if (nums[mid] == target)
+            if (target == nums[mid])
             {
+
                 ans = mid;
                 break;
             }
-            else if (nums[l] <= target && target < nums[mid] ){
+            else if (nums[l] <= nums[mid]){
 
-                r = mid-1;
+                if (nums[l] <= target && target < nums[mid]){
 
+                    r = mid -1;
+                }
+                else if(nums[l] > target){
+
+                    l = mid + 1;
+                }
+                else if (nums[mid] < target ){
+
+                    l = mid + 1;
+                }
             }
-            else if (target <= nums[r] && target > nums[mid]){
+            else {
 
-                l = mid + 1;
+                if (nums[l] <= target || target < nums[mid]){
 
+                    r = mid -1;
+                }
+                else{
+
+                    l = mid + 1;
+                    
+                }
+
+                
+
+                // if(nums[l] <= target ){
+
+                //     r = mid - 1;
+                // }
+                // else{
+
+                //     l = mid + 1;
+                // }
             }
+
+           
+                
             
-        
         }
-
-       
         return ans;
     }
 };
@@ -60,7 +90,14 @@ int main()
     int tar = v[v.size() - 1];
     v.pop_back();
     Solution s;
-    cout<<s.search(v, tar);
+    cout << s.search(v, tar);
 
     return 0;
 }
+
+
+/*
+
+
+
+*/ 
