@@ -17,6 +17,8 @@ using namespace std;
  * };
  */
 
+
+
 struct TreeNode
 {
     int val;
@@ -74,6 +76,44 @@ public:
     }
 };
 
+// Solution 2 : 
+
+
+// ------------- Better one ------------------//
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+// class Solution {
+// public:
+    
+//     bool checkbst(TreeNode * t , long long int left , long long int right){
+        
+//         if ( t == nullptr){
+            
+//             return true;
+//         }
+        
+//         if ( ! (left < t->val && t->val < right)){
+//             return false;
+//         }
+        
+//         return  checkbst(t->left , left , t->val) && checkbst(t->right , t->val , right);
+        
+//     }
+//     bool isValidBST(TreeNode* root) {
+        
+//         return checkbst(root , LONG_MIN , LONG_MAX);
+//     }
+// };
 int main()
 {
 
