@@ -1,9 +1,9 @@
 import subprocess
 
-subprocess.call(["git", "status"])
-i = input()
-subprocess.call(["git"  , "add" , "."])
-i = input()
-subprocess.call(["git"  , "commit" , "-m" , '''"added"'''])
-i = input()
-subprocess.call(["git"  , "push"])
+try : 
+    subprocess.call(["git", "status"])
+    subprocess.call(["git"  , "add" , "."])
+    subprocess.call(["git"  , "commit" , "-m" , '''"added"'''])
+    subprocess.call(["git"  , "push"])
+except Exception as e : 
+    print("ERROR : " , str(e))
